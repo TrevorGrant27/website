@@ -8,7 +8,7 @@ export default function Home() {
           {/* Photo + Name */}
           <div className="flex items-center gap-6 mb-12">
             <Image
-              src="/headshot.jpg"
+              src="/headshot.jpeg"
               alt="Trevor Grant Sidewand"
               width={140}
               height={140}
