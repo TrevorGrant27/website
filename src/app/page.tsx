@@ -4,14 +4,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="max-w-3xl mx-auto mt-12 md:mt-24">
-      <div className="flex gap-8 md:gap-12">
-        {/* Sideways name */}
-        <div className="hidden md:flex items-end">
-          <span className="text-[13px] tracking-[0.3em] uppercase text-muted font-medium -rotate-180 [writing-mode:vertical-lr] select-none">
-            Trevor Grant Sidewand
-          </span>
-        </div>
-
         <div>
           {/* Photo + Name */}
           <div className="flex items-center gap-6 mb-12">
@@ -67,7 +59,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
     </div>
   );
 }
