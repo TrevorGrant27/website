@@ -3,66 +3,59 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto mt-8 md:mt-16">
-      <div className="flex flex-col-reverse md:flex-row md:gap-16 gap-8">
-        {/* Bio */}
-        <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">
-            Hi, I&apos;m Trevor.
+    <div className="max-w-3xl mx-auto mt-12 md:mt-24">
+      {/* Photo + Name */}
+      <div className="flex items-center gap-6 mb-12">
+        <Image
+          src="/headshot.svg"
+          alt="Trevor Grant"
+          width={88}
+          height={88}
+          className="rounded-full object-cover w-[88px] h-[88px]"
+          priority
+        />
+        <div>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+            Trevor Grant
           </h1>
-
-          <div className="space-y-5 text-lg leading-relaxed text-[#333]">
-            <p>
-              I&apos;m a builder and writer.
-            </p>
-
-            <p>
-              I love working on interesting problems, learning new things,
-              and sharing what I find along the way.
-            </p>
-
-            <p>
-              I write about technology, business, and whatever else I&apos;m
-              curious about. You can find my{" "}
-              <Link href="/writing" className="text-blue-600 hover:text-blue-800">
-                articles here
-              </Link>
-              .
-            </p>
-
-            <p>
-              To contact me,{" "}
-              <a
-                href="mailto:trevor@example.com"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                send me an email
-              </a>
-              . Or reach out on{" "}
-              <a
-                href="https://x.com"
-                className="text-blue-600 hover:text-blue-800"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                X
-              </a>
-              .
-            </p>
-          </div>
+          <p className="text-muted mt-1">Builder &middot; Writer</p>
         </div>
+      </div>
 
-        {/* Photo */}
-        <div className="shrink-0">
-          <Image
-            src="/headshot.svg"
-            alt="Trevor Grant"
-            width={280}
-            height={280}
-            className="rounded-sm object-cover w-48 h-48 md:w-[280px] md:h-[280px]"
-            priority
-          />
-        </div>
+      {/* Bio */}
+      <div className="space-y-5 text-[17px] leading-relaxed text-[#333]">
+        <p>
+          I like building things and figuring out how stuff works. Right now
+          I&apos;m especially interested in software, AI, and the internet.
+        </p>
+
+        <p>
+          I write about what I&apos;m learning and thinking about &mdash;
+          mostly technology, business, and ideas that don&apos;t fit neatly
+          into one category. You can read my{" "}
+          <Link href="/writing" className="text-blue-600 hover:text-blue-800 underline underline-offset-2">
+            writing here
+          </Link>.
+        </p>
+
+        <p>
+          If you want to get in touch, reach out on{" "}
+          <a
+            href="https://x.com"
+            className="text-blue-600 hover:text-blue-800 underline underline-offset-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X
+          </a>{" "}
+          or{" "}
+          <a
+            href="mailto:trevor@example.com"
+            className="text-blue-600 hover:text-blue-800 underline underline-offset-2"
+          >
+            email me
+          </a>.
+        </p>
       </div>
     </div>
   );

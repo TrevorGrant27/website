@@ -23,9 +23,6 @@ export default function RootLayout({
             <Link href="/writing" className="text-foreground hover:opacity-60 transition-opacity no-underline">
               Writing
             </Link>
-            <Link href="/about" className="text-foreground hover:opacity-60 transition-opacity no-underline">
-              About
-            </Link>
           </div>
         </nav>
         <main className="flex-1 px-6 md:px-12 lg:px-20 py-8 md:py-12">
