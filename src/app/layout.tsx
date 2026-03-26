@@ -14,24 +14,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">
-        <nav className="flex items-center justify-between px-6 md:px-12 lg:px-24 py-6 border-b border-border">
-          <Link href="/" className="text-lg font-semibold tracking-tight no-underline">
+      <body className="min-h-full flex flex-col font-sans">
+        <nav className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-5">
+          <Link href="/" className="text-xl font-bold tracking-tight no-underline text-foreground">
             Trevor Grant
           </Link>
-          <div className="flex gap-6 text-sm text-muted">
-            <Link href="/writing" className="hover:text-foreground transition-colors">
+          <div className="flex gap-8 text-[15px]">
+            <Link href="/writing" className="text-foreground hover:opacity-60 transition-opacity no-underline">
               Writing
             </Link>
-            <Link href="/about" className="hover:text-foreground transition-colors">
+            <Link href="/about" className="text-foreground hover:opacity-60 transition-opacity no-underline">
               About
             </Link>
           </div>
         </nav>
-        <main className="flex-1 px-6 md:px-12 lg:px-24 py-12 md:py-16">
+        <main className="flex-1 px-6 md:px-12 lg:px-20 py-8 md:py-12">
           {children}
         </main>
-        <footer className="px-6 md:px-12 lg:px-24 py-8 border-t border-border text-sm text-muted">
+        <footer className="px-6 md:px-12 lg:px-20 py-8 text-sm text-muted">
           <p>&copy; {new Date().getFullYear()} Trevor Grant</p>
         </footer>
       </body>
