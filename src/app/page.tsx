@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -30,10 +31,58 @@ export default function Home() {
             </p>
 
             <p>
-              Co-founded RWO, a content marketing and go-to-market agency
-              helping high-growth startups and enterprise companies build
-              pipeline and drive revenue through strategic content, positioning,
-              and GTM execution (acquired by Jayne Agency).
+              Currently, I&apos;m experimenting with AI while perfecting my bagel recipe.
+            </p>
+
+            <p>
+              Previously, I founded RWO, a content marketing and go-to-market agency
+              helping high-growth startups and enterprise companies build pipeline and
+              drive revenue through strategic content, positioning, and GTM execution
+              (acquired in 2025).
+            </p>
+
+            <p>
+              I also have a degree in biomedical engineering, covered the tech industry
+              as a journalist, and wrote for The Second City.
+            </p>
+
+            <p>
+              I love college basketball and complaining about Cleveland sports.
+            </p>
+
+            <p>
+              I&apos;m born and raised in Cleveland and have lived in Chicago, Paris,
+              and Rome. I currently call Austin home alongside my fianc&eacute;e, Carly,
+              and two cats, Poseidon and Zeus.
+            </p>
+
+            <p>
+              To contact me,{" "}
+              <button
+                type="button"
+                onClick={() => {navigator.clipboard.writeText("trevor@rwo.fyi")}}
+                className="text-blue-600 hover:text-blue-800 underline underline-offset-2 cursor-pointer"
+              >
+                send me an email
+              </button>
+              . Or reach out on{" "}
+              <a
+                href="https://x.com/trevorisonline"
+                className="text-blue-600 hover:text-blue-800 underline underline-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                X
+              </a>{" "}
+              or{" "}
+              <a
+                href="https://www.linkedin.com/in/trevorgrantrwo/"
+                className="text-blue-600 hover:text-blue-800 underline underline-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>.
             </p>
           </div>
         </div>
