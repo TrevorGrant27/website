@@ -6,22 +6,18 @@ export default function Home() {
   return (
     <div className="max-w-3xl mx-auto mt-12 md:mt-24">
         <div>
-          {/* Photo + Name */}
-          <div className="flex items-center gap-6 mb-12">
+          <div className="flex flex-col-reverse md:flex-row md:items-start md:justify-between md:gap-16 gap-8 mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Hi, I&apos;m Trevor.
+            </h1>
             <Image
               src="/headshot.jpeg"
               alt="Trevor Grant Sidewand"
-              width={140}
-              height={140}
-              className="rounded-full object-cover w-[120px] h-[120px] md:w-[140px] md:h-[140px]"
+              width={200}
+              height={200}
+              className="rounded-sm object-cover w-[160px] h-[160px] md:w-[200px] md:h-[200px] shrink-0"
               priority
             />
-            <div>
-              <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Trevor Grant Sidewand
-              </h1>
-              <p className="text-muted mt-1">Entrepreneur</p>
-            </div>
           </div>
 
           {/* Bio */}
