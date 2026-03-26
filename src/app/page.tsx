@@ -8,7 +8,7 @@ export default function Home() {
         {/* Sideways name */}
         <div className="hidden md:flex items-end">
           <span className="text-[13px] tracking-[0.3em] uppercase text-muted font-medium -rotate-180 [writing-mode:vertical-lr] select-none">
-            Trevor Grant
+            Trevor Grant Sidewand
           </span>
         </div>
 
@@ -17,7 +17,7 @@ export default function Home() {
           <div className="flex items-center gap-6 mb-12">
             <Image
               src="/headshot.svg"
-              alt="Trevor Grant"
+              alt="Trevor Grant Sidewand"
               width={88}
               height={88}
               className="rounded-full object-cover w-[88px] h-[88px]"
@@ -25,7 +25,7 @@ export default function Home() {
             />
             <div>
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Trevor Grant
+                Trevor Grant Sidewand
               </h1>
               <p className="text-muted mt-1">Entrepreneur</p>
             </div>

@@ -3,8 +3,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Trevor Grant",
-  description: "Personal site of Trevor Grant",
+  title: "Trevor Grant Sidewand",
+  description: "Personal site of Trevor Grant Sidewand",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         <nav className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-5">
           <Link href="/" className="text-xl font-bold tracking-tight no-underline text-foreground">
-            Trevor Grant
+            Trevor Grant Sidewand
           </Link>
           <div className="flex gap-8 text-[15px]">
             <Link href="/writing" className="text-foreground hover:opacity-60 transition-opacity no-underline">
@@ -29,7 +29,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="px-6 md:px-12 lg:px-20 py-8 text-sm text-muted">
-          <p>&copy; {new Date().getFullYear()} Trevor Grant</p>
+          <p>&copy; {new Date().getFullYear()} Trevor Grant Sidewand</p>
         </footer>
       </body>
     </html>
