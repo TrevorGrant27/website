@@ -26,36 +26,14 @@ export default function Home() {
           {/* Bio */}
           <div className="space-y-5 text-[17px] leading-relaxed text-[#333]">
             <p>
-              I like building things and figuring out how stuff works. Right now
-              I&apos;m especially interested in software, AI, and the internet.
+              I&apos;m an entrepreneur.
             </p>
 
             <p>
-              I write about what I&apos;m learning and thinking about &mdash;
-              mostly technology, business, and ideas that don&apos;t fit neatly
-              into one category. You can read my{" "}
-              <Link href="/writing" className="text-blue-600 hover:text-blue-800 underline underline-offset-2">
-                writing here
-              </Link>.
-            </p>
-
-            <p>
-              If you want to get in touch, reach out on{" "}
-              <a
-                href="https://x.com"
-                className="text-blue-600 hover:text-blue-800 underline underline-offset-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                X
-              </a>{" "}
-              or{" "}
-              <a
-                href="mailto:trevor@example.com"
-                className="text-blue-600 hover:text-blue-800 underline underline-offset-2"
-              >
-                email me
-              </a>.
+              Co-founded RWO, a content marketing and go-to-market agency
+              helping high-growth startups and enterprise companies build
+              pipeline and drive revenue through strategic content, positioning,
+              and GTM execution (acquired by Jayne Agency).
             </p>
           </div>
         </div>
