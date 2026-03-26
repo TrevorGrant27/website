@@ -28,9 +28,7 @@ export default function RootLayout({
         <main className="flex-1 px-6 md:px-12 lg:px-20 py-8 md:py-12">
           {children}
         </main>
-        <footer className="px-6 md:px-12 lg:px-20 py-8 text-sm text-muted">
-          <p>&copy; {new Date().getFullYear()} Trevor Grant Sidewand</p>
-        </footer>
+        <footer className="px-6 md:px-12 lg:px-20 py-8" />
       </body>
     </html>
   );
